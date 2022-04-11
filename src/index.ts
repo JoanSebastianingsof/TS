@@ -38,12 +38,12 @@ function punto2(){
     console.log(decimasR);
   
     let suma = miles + cientos + decimas + decimasR;
-    console.log(suma);
+    console.log("Resultado parcial: "+suma);
     document.write("Resultado parcial: "+suma);
     let ult = Math.floor(suma / 10);
     let ultR =Math.floor(suma % 10);
     let resultadoFinal = ult + ultR;
-    console.log(" Resultado"+resultadoFinal);
+    console.log(" Resultado final: "+resultadoFinal);
     document.write(" Resultado final:"+resultadoFinal);
     
 }
@@ -65,12 +65,12 @@ function punto3(){
  }
  
  function punto4(){
-    var x = 5;
-    var y = 5;
-    var matriz = [];
-    for (var i = 0; i < x; i++) {
-        var fila = [];
-        for (var j = 0; j < y; j++) {
+    let x = 5;
+    let y = 5;
+    let matriz = [];
+    for (let i = 0; i < x; i++) {
+        let fila = [];
+        for (let j = 0; j < y; j++) {
             if (i == j) {
                 fila.push(0);
             }
@@ -95,9 +95,9 @@ function punto5(){
 
 function punto6(){
     let a =0;
-    var x = 4;
-    var y = 6;
-    var matriz= [];
+    let x = 4;
+    let y = 6;
+    let matriz= [];
     
     
     for (let i=0;i<x;i++) {
@@ -121,11 +121,11 @@ function punto6(){
 
 
 function punto7(){
-    var x = 5;
-    var y = 5;
-    var b=0;
-    var z =4;
-    var matriz= [];
+    let x = 5;
+    let y = 5;
+    let b=0;
+    let z =4;
+    let matriz= [];
     for (let i=0;i<x;i++) {
         let fila=[];
      for (let j=0;j<y;j++) {
@@ -146,7 +146,7 @@ function punto7(){
     
 }
 function punto8(){
-    var array=[];
+    let array=[];
     let min = -100;
     let max=100;
     let p=0;
@@ -179,219 +179,14 @@ function punto8(){
 }
 
 function punto9(){
-    var x = 4;
-    var y = 4;
-    var b=0;
-    var z =3;
-    var matriz= [];
-    for (let i=0;i<x;i++) {
-        let fila=[];
-     for (let j=0;j<y;j++) {
-         if(i == b && j == z){
-            b=b+1;
-            z=z-1;
-            fila.push(1);
-        }else{
-            fila.push(0) ;
-    
-        }
-        
-     }
-     matriz.push(fila);
-    }
-    console.log(matriz);
-    document.write(""+matriz);
-    
-}
-function punto1(){
-    let f = 5;
-    for(let i = 1; i <= f; i++) {
-      let z=i;
-     for(let a = 1; a <=f; a++) {
-                    console.log(" ");
-                    document.write(" ");
-    
-                }
-                for(let a = 1; a <= i; a++) {
-                    console.log(""+z);
-                    document.write(""+z);
-
-                    
-            
-                }
-            
-                console.log();
-                document.write();
-
-    };
-}
-function punto2(){
-    let num = 347;
-    document.write("Numero elegido: "+num);
-    let milesR =Math.floor(num % 1000) ;
-    let miles = Math.floor(num / 1000);
-    console.log(miles);
-    console.log(milesR);
-    
-    let cientos = Math.floor(milesR / 100);
-    let cientosR = Math.floor (milesR % 100 );
-    console.log(cientos);
-    console.log(cientosR);
-    let decimas = Math.floor(cientosR / 10);
-    let decimasR = Math.floor(cientosR % 10);
-    console.log(decimas);
-    console.log(decimasR);
-  
-    let suma = miles + cientos + decimas + decimasR;
-    console.log(suma);
-    document.write("Resultado parcial: "+suma);
-    let ult = Math.floor(suma / 10);
-    let ultR =Math.floor(suma % 10);
-    let resultadoFinal = ult + ultR;
-    console.log(" Resultado"+resultadoFinal);
-    document.write(" Resultado final:"+resultadoFinal);
-    
-}
-function punto3(){
     let x = 4;
     let y = 4;
+    let b=0;
+    let z =3;
     let matriz= [];
     for (let i=0;i<x;i++) {
         let fila=[];
      for (let j=0;j<y;j++) {
-        fila.push(0) ;
-     }
-     matriz.push(fila);
-    }
-    
-    console.log(matriz);
-    document.write(""+matriz);
-    
- }
- 
- function punto4(){
-    var x = 5;
-    var y = 5;
-    var matriz = [];
-    for (var i = 0; i < x; i++) {
-        var fila = [];
-        for (var j = 0; j < y; j++) {
-            if (i == j) {
-                fila.push(0);
-            }
-            else {
-                fila.push("*");
-            }
-        }
-        matriz.push(fila);
-    }
-    console.log(matriz);
-    document.write(""+matriz );
-}
-function punto5(){
-    let arreglo = [];
-
-    for(let i=1;i<=15;i++){
-        arreglo.push(i);
-    }
-    console.log(arreglo);
-    document.write(""+arreglo);
-}
-
-function punto6(){
-    let a =0;
-    var x = 4;
-    var y = 6;
-    var matriz= [];
-    
-    
-    for (let i=0;i<x;i++) {
-        let fila=[];
-     for (let j=0;j<y;j++) {
-        
-            a=a+1;
-            if (a%2!=0){
-                fila.push(a);
-            }
-         }
-         matriz.push(fila);
-    }
-     
-    
-    
-    console.log(matriz);
-    document.write(""+matriz);
-    
-}
-
-
-function punto7(){
-    var x = 5;
-    var y = 5;
-    var b=0;
-    var z =4;
-    var matriz= [];
-    for (let i=0;i<x;i++) {
-        let fila=[];
-     for (let j=0;j<y;j++) {
-         if(i == b && j == z){
-            b=b+1;
-            z=z-1;
-            fila.push(0);
-        }else{
-            fila.push(1) ;
-    
-        }
-        
-     }
-     matriz.push(fila);
-    }
-    console.log(matriz);
-    document.write(""+matriz);
-    
-}
-function punto8(){
-    var array=[];
-    let min = -100;
-    let max=100;
-    let p=0;
-    let cero=0;
-    let n=0
-    for(let i=0;i<=15;i++){
-        array.push(Math.floor(Math.random() *(max-min) +min ) );
-        if(array[i]>0){
-            p++
-        }
-        else if(array[i]==0){
-            cero++
-        }
-        else{
-            n++
-    
-        }
-    }
-    console.log(" arreglo: "+array);
-    console.log("Positivos: "+p);
-    console.log(" Ceros: "+cero);
-    console.log(" negativos: " +n);
-    
-    document.write(" arreglo: "+array);
-    document.write("Positivos: "+p);
-    document.write(" Ceros: "+cero);
-    document.write(" negativos: " +n);
-    
-    
-}
-
-function punto9(){
-    var x = 4;
-    var y = 4;
-    var b=0;
-    var z =3;
-    var matriz= [];
-    for (let i=0;i<x;i++) {
-        let fila=[];
-     for (let j=0;j<y;j++) {
          if(i == b && j == z){
             b=b+1;
             z=z-1;
@@ -408,6 +203,7 @@ function punto9(){
     document.write(""+matriz);
     
 }
+
 
 
 function punto10(){
@@ -442,8 +238,8 @@ function punto10(){
 
 function punto11(){
    
-    var x = 4;
-    var y = 6;
+    let x = 4;
+    let y = 6;
     let matriz= [];
     let minimo=15;
     let maximo=30;
@@ -467,12 +263,11 @@ function punto11(){
     }
     
     function punto12(){
-        /*var x = prompt("Cuantas filas desea");
-        var y = prompt("Cuantas columnas desea");*/
-         var x =3;
-        var y = 3;
+        let x =parseInt(prompt("Cuantas filas desea")!); 
+        let y = parseInt(prompt("Cuantas columnas desea")!); 
+         
      
-     var matriz= [];
+     let matriz= [];
      let d=0;
      let e=1;
      let s;
@@ -495,9 +290,9 @@ function punto11(){
      }
      
      function punto13(){
-        var x = 4;
-        var y = 0;
-        var matriz= [];
+        let x = 4;
+        let y = 0;
+        let matriz= [];
         for (let i=0;i<x;i++) {
             let fila=[];
             y++
@@ -513,11 +308,10 @@ function punto11(){
      }
      function punto14(){
   
-        /*var x =prompt("Ingrese el numero de filas");
-        var y = prompt("Ingrese el numero de columnas");*/
-        var x =3;
-        var y = 3;
-        var matriz= [];
+        let x = parseInt( prompt("Ingrese el numero de filas")!);
+        let y = parseInt(prompt("Ingrese el numero de columnas")!); 
+        
+        let matriz= [];
         
         if(x>0 && y>0){
             for (let i=0;i<x;i++) {
@@ -540,9 +334,9 @@ function punto11(){
         }
         
         function punto15(){
-            var x = 3;
-         var y = 3;
-         var matriz= [];
+         let x = 3;
+         let y = 3;
+         let matriz= [];
          for (let i=0;i<x;i++) {
             let fila=[];
          for (let j=0;j<y;j++) {
